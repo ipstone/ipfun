@@ -1,0 +1,12 @@
+---
+title: "Ipstone Utility Functions"
+author: "Isaac Pei"
+date: \today
+output: pdf_document
+bibliography: references.bib
+vignette: >
+  %\VignetteIndexEntry{ Ipstone Utility Functions }
+  %\VignetteEngine{knitr::rmarkdown}
+  %\usepackage[utf8]{inputenc} 
+---
+

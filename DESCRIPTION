@@ -1,0 +1,19 @@
+Package: ipfun
+Title: Ipstone Utility Functions
+Version: 0.0.1
+Maintainer: Isaac Pei <ipstone@a1make.com>
+Description: A collection for small functions to make coding R fun and easy.
+Author: Isaac Pei
+Depends: R (>= 3.3.1)
+Imports:
+Suggests:
+    testthat,
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/ipstone/ipfun
+BugRepots: https://github.com/ipstone/ipfun/issues
+RoxygenNote: 6.1.0
