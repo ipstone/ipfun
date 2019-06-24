@@ -6,7 +6,7 @@
 #' @keywords find name
 #' @export
 #' @examples
-#' fdn(mtcars, 'p') # Return all the column names containing 'p'
+#' fdn(mtcars, 'p') # Return all the column nam containing 'p'
 fdn <- function(data, name) {print(grep(name, names(data), value=TRUE, ignore.case=TRUE))}
 
 #' Find name in global env
@@ -18,6 +18,24 @@ fdn <- function(data, name) {print(grep(name, names(data), value=TRUE, ignore.ca
 #' @examples
 #' ldn('d') # Return all the column names containing 'd'
 ldn <- function (name) { ls(envir=.GlobalEnv, pattern=name) }
+
+#' List all available functions in a package
+#'
+#' Return all the functions in the input: package_name
+#' @param name - package_name: input package to list its function
+#' @keywords list pacakage function
+#' @export
+#' @examples
+#' lsfun("dplyr") # Return all the functions in dplyr package (tree view)
+#' lsfun('dplyr', output.list=T) # Return all the functions as list
+lsfun <- function(package_name, output.list=F) { 
+    pkg_search = paste0("package:", package_name)
+    if (output.list) {
+        return(ls(pkg_search))
+    } else {
+        return(lsf.str(pkg_search))
+    }
+}
 
 #' Create folder similarly as mkdir -p
 #'

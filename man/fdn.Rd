@@ -15,7 +15,7 @@ fdn(data, name)
 Return the matched (ignore case) names in the data obj.
 }
 \examples{
-fdn(mtcars, 'p') # Return all the column names containing 'p'
+fdn(mtcars, 'p') # Return all the column nam containing 'p'
 }
 \keyword{find}
 \keyword{name}

@@ -16,4 +16,4 @@ Encoding: UTF-8
 LazyData: true
 URL: https://github.com/ipstone/ipfun
 BugRepots: https://github.com/ipstone/ipfun/issues
-RoxygenNote: 6.1.0
+RoxygenNote: 6.1.1

@@ -3,4 +3,5 @@
 export(fdn)
 export(ipr_fixname)
 export(ldn)
+export(lsfun)
 export(mkdirp)
