@@ -55,7 +55,7 @@ mkdirp <- function(folder) if (!dir.exists(folder)) dir.create(folder, recursive
 #' @examples
 #' names(dataframe_tobe_fixed) = ipr_fixname(dataframe_tobe_fixed)
 ipr_fixname <- function(df, 
-                rmlist=c(" ", "(", ")", ":", "_", "-", "\\", "/")) {
+                rmlist=c(" ", "(", ")", ":", "_", "-", "\\", "/", "'", '"')) {
   # Fix names by removing special chars from R dataframe names
   #     default rmlist is a set of common special sep chars
   dfn <- names(df)
