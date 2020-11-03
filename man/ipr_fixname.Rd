@@ -4,7 +4,10 @@
 \alias{ipr_fixname}
 \title{Return fixed name of input dataframe}
 \usage{
-ipr_fixname(df, rmlist = c(" ", "(", ")", ":", "_", "-", "\\\\", "/"))
+ipr_fixname(
+  df,
+  rmlist = c(" ", "(", ")", ":", "_", "-", "\\\\", "/", "'", "\\"")
+)
 }
 \arguments{
 \item{df}{- the input dataframe}

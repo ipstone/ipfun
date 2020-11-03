@@ -19,6 +19,16 @@ fdn <- function(data, name) {print(grep(name, names(data), value=TRUE, ignore.ca
 #' ldn('d') # Return all the column names containing 'd'
 ldn <- function (name) { ls(envir=.GlobalEnv, pattern=name) }
 
+#' Return the length of unique items
+#'
+#' Return the length of unique items for the given argument
+#' @param obj  - the object/list to find the length of unique items
+#' @keywords unique length
+#' @export
+#' @examples
+#' lu(df$keyid) # Return the length of unique items in df$keyid
+lu <- function (obj) { length(unique( obj )) }
+
 #' List all available functions in a package
 #'
 #' Return all the functions in the input: package_name
